@@ -5,27 +5,6 @@
 // ?- pack([a,a,a,a,b,c,c,a,a,d,e,e,e,e],X).
 // X = [[a,a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]
 
-// var arr = [2,2,2,2,1,1,1,5,5,8,7,9];
-
-//     function removeDuplicate(array){
-//         var latest = [];
-//         var newArray = [];
-//         for(var i = 0; i < array.length  ; i++) {
-//             if(array[i] === array[i + 1]) {
-//                 newArray.push(array[i]);
-//             }
-//             else
-//             {
-//                latest.push(array[i]);
-//             //    latest.push(newArray);
-//             }
-//         }
-//         console.log(latest);
-//         console.log(newArray);
-
-
-//     }
-//     removeDuplicate(arr);
 
 
     var array = [ 'a','f','r','r','r','b','b','b','c','c']
