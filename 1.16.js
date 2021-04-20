@@ -7,7 +7,7 @@ var array = [1,2,3,4];
 
 function dropNthElement(array, nth) {
    updatedArray = [];
-  for (var i = 0; i < array.length; i++) {
+  for (var i = 1; i < array.length; i++) {
     if (i % nth != 0) 
     {
       updatedArray.push(array[i]);
