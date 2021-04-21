@@ -5,23 +5,42 @@
 // ?- encode_modified([a,a,a,a,b,c,c,a,a,d,e,e,e,e],X).
 // X = [[4,a],b,[2,c],[2,a],d,[4,e]]
 
-function encode(string) {
-    if (!string) return '';
-    let encode = '';
-
-    for (let i = 0; i < string.length; i++) {
-      let count = 1;
-      for (let j = i; j < string.length; j++) {
-        if (string[i] !== string[j+1]) break;
-        count++;
-        i++;
+const sublists = (input) => {
+  let tempArray = [];
+  for (i = 0; i < input.length; i++) {
+    if (tempArray.length === 0) 
+    {
+      tempArray.push([input[i]]);
+    } 
+    else {
+      let temp = tempArray[tempArray.length - 1];
+      if (temp[0] === input[i]) 
+      {
+        temp.push(input[i]);
+      } 
+      else
+      {
+        tempArray.push([input[i]]);
       }
-      encode += count == 1 ? string[i] : count + string[i];
-    //   console.log(encode += count, 'checking the encode')
-
     }
-
-    return encode
   }
- var encoded = encode('eeegggeerdssc')
- console.log(encoded)
+  return tempArray;
+};
+
+const  arrayOne = ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
+function encode(arr) {
+  return sublists(arr).map((item)=>{
+    return [item.length,item[0]]
+  })
+}
+console.log(encode(arrayOne))
+
+const  arrayTwo = ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
+ function single (array){
+return encode (array).map((item) =>{
+  return item[0] === 1 ? item[1] : item
+
+ })
+};
+console.log(single(arrayTwo))
+

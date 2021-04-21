@@ -6,27 +6,35 @@
 // X = [[a,a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]
 
 
+const array = [ 'a','f','r','r','r','r','b','b','b','c','c']
 
-    var array = [ 'a','f','r','r','r','b','b','b','c','c']
+const sublists = (input) => {
+  let tempArray = [];
 
-const packCon = (input) => {
-  let tempArry = [];
+
+
+ 
+
   for (i = 0; i < input.length; i++) {
-    if (tempArry.length === 0) {
-      tempArry.push([input[i]]);
-    } else {
-      const temp = tempArry[tempArry.length - 1];
-      //   console.log(temp);
-      if (temp[0] === input[i]) {
+    if (tempArray.length === 0) 
+    {
+      tempArray.push([input[i]]);
+    } 
+    else {
+      let temp = tempArray[tempArray.length - 1];
+      if (temp[0] === input[i]) 
+      {
         temp.push(input[i]);
-      } else {
-        tempArry.push([input[i]]);
+      } 
+      else
+      {
+        tempArray.push([input[i]]);
       }
     }
   }
-  return tempArry;
+  return tempArray;
 };
 
-console.log(packCon(array));
+console.log(sublists(array));
 
-   
+

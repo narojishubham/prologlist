@@ -3,15 +3,13 @@
 
 
 function palindrome(str) {
-    var re = /[^A-Za-z0-9]/g;
-    str = str.toLowerCase().replace(re,'');
-    var size = str.length;
-    for (var i = 0; i < size/2; i++) {
+  
+    let size = str.length;
+    for (let i = 0; i < size/2; i++) {
       if (str[i] !== str[size - 1 - i]) {
           console.log('false') ;
       }
     }
     return true;
    }
-   var output = palindrome("A man, a plan, a canal. Panama");
-   console.log(output)
+   console.log(palindrome([1, 2, 2, 1]))
