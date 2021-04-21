@@ -7,15 +7,7 @@
 
 // Hint: Use the predefined predicates is_list/1 and append/3
 
-var list1 = [1,2,3,4];
-var list2 = [5,6,7,8]
-
-var length = list2.length;
-
-for( var i = 0; i < length; i++)
-{
-    // console.log(list2[i])
-    list1.push(list2[i])
-    
-}console.log(list1)
-console.log(list1.length)
+const list1 = [0, 1, 2, [3, 4]];
+console.log(list1.flat());
+const list2 = [0, [1, 2, [3, 4]]];
+console.log(list2.flat(2));

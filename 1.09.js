@@ -7,24 +7,36 @@
 
     var array = [ 'a','f','r','r','r','b','b','b','c','c']
 
-const packCon = (input) => {
-  var tempArry = [];
+const sublists = (input) => {
+  var tempArray = [];
   for (i = 0; i < input.length; i++) {
-    if (tempArry.length === 0) {
-      tempArry.push([input[i]]);
-    } else {
-      var temp = tempArry[tempArry.length - 1];
-      //   console.log(temp);
-      if (temp[0] === input[i]) {
+    if (tempArray.length === 0) 
+    {
+      tempArray.push([input[i]]);
+    } 
+    else {
+      var temp = tempArray[tempArray.length - 1];
+      if (temp[0] === input[i]) 
+      {
         temp.push(input[i]);
-      } else {
-        tempArry.push([input[i]]);
+      } 
+      else
+      {
+        tempArray.push([input[i]]);
       }
     }
   }
-  return tempArry;
+  return tempArray;
 };
 
-console.log(packCon(array));
+console.log(sublists(array));
 
-   
+
+// OUTPUT
+// [
+//   [ 'a' ],
+//   [ 'f' ],
+//   [ 'r', 'r', 'r' ],
+//   [ 'b', 'b', 'b' ],
+//   [ 'c', 'c' ]
+// ]

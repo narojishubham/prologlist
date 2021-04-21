@@ -5,15 +5,14 @@
 // L = [e,d,a]
 
 
-const arr = ["a", "b", "c", "d", "e", "f", "g", "h"];
+const array = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
-function selectRandom(arr, numberOfElement) {
+function random(arr, numberOfElement) {
   extracted = [];
   for (i = 0; i < numberOfElement; i++) {
     extracted.push(arr[Math.floor(Math.random() * arr.length)]);
   }
 
-  //   return Math.floor(Math.random() * arr.length);
   return extracted;
 }
-console.log(selectRandom(arr, 4));
+console.log(random(array, 4));

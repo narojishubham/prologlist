@@ -4,19 +4,18 @@
 // ?- element_at(X,[a,b,c,d,e],3).
 // X = c
 
-var array = [2,4,5,3,6,7,9];
+var array1 = [2,4,5,3,6,7,9];
 
-var size = array.length
+var size = array1.length
 size = size -1;
 
-var kth = 5
+function element(array,kth)  {
 for(var i = 0; i < size; i++)
 {
-    if( array[i] === kth)
+    if( i=== kth)
     {
-        console.log('The number is present')
-    }
-    else{
-        console.log('Number is not present')
+        return array[i]
     }
 }
+}
+console.log(element(array1,5))
