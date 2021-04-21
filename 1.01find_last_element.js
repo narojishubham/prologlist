@@ -3,10 +3,20 @@
 // ?- my_last(X,[a,b,c,d]).
 // X = d
 
-var array = [2,4,5,3,6,7,9];
 
-var lastNumber = array.length
-console.log(lastNumber)
-lastNumber -= 1;
-var value = array[lastNumber]
-console.log(value)
+
+var array = ["a", "b", "c", "d"];
+
+function lastElement(input) {
+  let item;
+  for (item of input) {
+  console.log(input)
+
+  }
+  return item;
+}
+console.log(lastElement(array));
+
+// OUTPUT is
+
+// d
