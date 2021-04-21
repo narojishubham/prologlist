@@ -5,6 +5,7 @@
 // ?- pack([a,a,a,a,b,c,c,a,a,d,e,e,e,e],X).
 // X = [[a,a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]
 
+
     var array = [ 'a','f','r','r','r','b','b','b','c','c']
 
 const sublists = (input) => {
@@ -31,12 +32,3 @@ const sublists = (input) => {
 
 console.log(sublists(array));
 
-
-// OUTPUT
-// [
-//   [ 'a' ],
-//   [ 'f' ],
-//   [ 'r', 'r', 'r' ],
-//   [ 'b', 'b', 'b' ],
-//   [ 'c', 'c' ]
-// ]

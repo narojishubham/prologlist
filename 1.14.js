@@ -5,15 +5,7 @@
 
 // var numbers = [1,2,3,4,5]
 
-// function duplicate(arr)
-// {
-//     arr.map((item,index)=>{
-//         for(var i= 0; i< 4; i++)
-//         {
 
-//         }
-//     })
-// }
 newArray = [2, 3, 1, 4];
 duplicate=[];
 
