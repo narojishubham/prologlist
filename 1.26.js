@@ -11,10 +11,6 @@ const List= ["a", "b", "c", "d"];
 
 
 function combinations(List,num) {
- 
-  if (num == List.length) {
-    return [List];
-  }
 
   if (num == 1) {
     const combs = [];
