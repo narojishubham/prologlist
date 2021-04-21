@@ -3,14 +3,13 @@
 // Example:
 // ?- element_at(X,[a,b,c,d,e],3).
 // X = c
+const array1 = [2,4,5,3,6,7,9];
 
-var array1 = [2,4,5,3,6,7,9];
-
-var size = array1.length
+let size = array1.length
 size = size -1;
 
 function element(array,kth)  {
-for(var i = 0; i < size; i++)
+for(let i = 0; i < size; i++)
 {
     if( i=== kth)
     {

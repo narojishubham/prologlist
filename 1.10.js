@@ -7,17 +7,16 @@
 
 
 
-// var array = [ 'a','f','r','r','r','b','b','b','c','c']
 
 const sublists = (input) => {
-  var tempArray = [];
+  let tempArray = [];
   for (i = 0; i < input.length; i++) {
     if (tempArray.length === 0) 
     {
       tempArray.push([input[i]]);
     } 
     else {
-      var temp = tempArray[tempArray.length - 1];
+      let temp = tempArray[tempArray.length - 1];
       if (temp[0] === input[i]) 
       {
         temp.push(input[i]);
@@ -30,7 +29,6 @@ const sublists = (input) => {
   }
   return tempArray;
 };
-
 const  arrayOne = ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
 function encode(arr) {
   return sublists(arr).map((item)=>{

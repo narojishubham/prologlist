@@ -3,8 +3,8 @@
 // ?- rnd_permu([a,b,c,d,e,f],L).
 // L = [b,a,d,c,e,f]
 
-newArray = []
-array1 = ["a", "b", "c", "d","e","f"]
+let newArray = []
+const array1 = ["a", "b", "c", "d","e","f"]
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));

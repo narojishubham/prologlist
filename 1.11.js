@@ -6,14 +6,14 @@
 // X = [[4,a],b,[2,c],[2,a],d,[4,e]]
 
 const sublists = (input) => {
-  var tempArray = [];
+  let tempArray = [];
   for (i = 0; i < input.length; i++) {
     if (tempArray.length === 0) 
     {
       tempArray.push([input[i]]);
     } 
     else {
-      var temp = tempArray[tempArray.length - 1];
+      let temp = tempArray[tempArray.length - 1];
       if (temp[0] === input[i]) 
       {
         temp.push(input[i]);
@@ -38,7 +38,6 @@ console.log(encode(arrayOne))
 const  arrayTwo = ['a','a','a','a','b','c','c','a','a','d','e','e','e','e']
  function single (array){
 return encode (array).map((item) =>{
-  console.log(item,'item')
   return item[0] === 1 ? item[1] : item
 
  })

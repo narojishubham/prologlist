@@ -5,9 +5,9 @@
 // L = [23,1,17,33,21,37]
 
 function random (length,num){
-var arr = [];
+let arr = [];
 while(arr.length < length){
-    var r = Math.floor(Math.random() * num) ;
+    let r = Math.floor(Math.random() * num) ;
     if(arr.indexOf(r) === -1) arr.push(r);
 }
 return arr

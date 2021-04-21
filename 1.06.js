@@ -4,8 +4,8 @@
 
 function palindrome(str) {
   
-    var size = str.length;
-    for (var i = 0; i < size/2; i++) {
+    let size = str.length;
+    for (let i = 0; i < size/2; i++) {
       if (str[i] !== str[size - 1 - i]) {
           console.log('false') ;
       }

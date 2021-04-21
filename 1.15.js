@@ -6,14 +6,14 @@
 // What are the results of the goal:
 // ?- dupli(X,3,Y)
 
-a = [2, 3, 3, 1, 4];
+const array = [2, 3, 3, 1, 4];
 function duplicateNtimes(list, n) {
-  b = [];
-  for (var i = 0; i < a.length; ++i) {
-    for (var j = 0; j < n; j++) {
-      b.push(a[i]);
+  temp = [];
+  for (let i = 0; i < list.length; ++i) {
+    for (let j = 0; j < n; j++) {
+      temp.push(list[i]);
     }
   }
-  return b;
+  return temp;
 }
-console.log(duplicateNtimes(a, 3));
+console.log(duplicateNtimes(array, 3));

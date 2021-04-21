@@ -6,11 +6,11 @@
 // X = [a,b,c,a,d,e]
 
 
-var arr = [2,2,1,1,5,5,8,7,9];
+const arr = [2,2,1,1,5,5,8,7,9];
 
     function removeDuplicate(array){
 
-        var newArray = [];
+        const newArray = [];
         newArray.push(array[0]);
     array.map((item,index)=>{
         
@@ -21,6 +21,6 @@ var arr = [2,2,1,1,5,5,8,7,9];
          }     
         }
     })
-        console.log(newArray);
+        return (newArray);
     }
-    removeDuplicate(arr);
+    console.log(removeDuplicate(arr));

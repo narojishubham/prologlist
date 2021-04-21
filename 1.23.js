@@ -9,7 +9,7 @@ const array = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
 function random(arr, numberOfElement) {
   extracted = [];
-  for (i = 0; i < numberOfElement; i++) {
+  for (let i = 0; i < numberOfElement; i++) {
     extracted.push(arr[Math.floor(Math.random() * arr.length)]);
   }
 
