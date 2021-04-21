@@ -19,7 +19,7 @@ function combinations(List,num) {
   for (let i = 0; i < List.length - num + 1; i++) {
     const head = List.slice(i, i + 1);
     // console.log(head,'header')
-    const tailcombs = combinations(List.slice(i + 1), num - 1);
+    const tailcombs = combinations(List.slice(i + 1));
     // console.log(tailcombs,'tailcombs')
     for (let j = 0; j < tailcombs.length; j++) {
       combs.push(head.concat(tailcombs[j]));
